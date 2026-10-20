@@ -24,7 +24,7 @@
 
   <main>
     <h1>Tongue Ritual — Privacy Policy</h1>
-    <p class="lead">Last updated: July 18, 2026</p>
+    <p class="lead">Last updated: October 18, 2026</p>
 
     <section>
       <h2>Introduction</h2>
@@ -42,10 +42,10 @@
     <section>
       <h2>Summary</h2>
       <p>
-        The App helps you capture tongue photos you choose to submit, generates Traditional Chinese Medicine (TCM)–inspired wellness insights (such as balance scores, six signal readings, body patterns, food picks, and wellness tips), and stores certain results and profile details on your device.
+        The App helps you capture tongue photos you choose to submit, generates TCM-inspired general wellness content (including a visual balance score, six feature cards, a body-pattern summary, food picks, and wellness tips), and stores certain results and profile details on your device.
       </p>
       <p>
-        When you run a tongue scan, your photo and related inputs are transmitted over HTTPS to servers operated by us or our service providers to generate results. You can delete on-device App data using <strong>Settings → Delete My Data</strong>. You can contact us about privacy using the email address at the end of this policy.
+        Before the first AI observation, the App explains that your tongue photo will be sent through our server to <strong>Google LLC's Gemini API</strong> and asks for your permission. If you decline, the photo is not sent. You can withdraw permission at any time from <strong>Settings → Share Data with AI</strong>.
       </p>
       <p>
         The App is not a medical device. Outputs are for general wellness and educational purposes only.
@@ -66,9 +66,9 @@
       <h2>Information We Collect</h2>
       <p>Depending on how you use the App, we may process the following categories of information:</p>
       <ul>
-        <li><strong>Content you provide.</strong> When you choose to capture a tongue photo with the in-app camera (or, if available, import a photo from your library) and request analysis, we process that image and any related inputs needed to run the feature.</li>
+        <li><strong>Content you provide.</strong> When you explicitly capture a tongue photo with the in-app camera or select one with Apple's photo picker and request an AI observation, we process that image. Your name, age range, onboarding answers, and saved history are not included in the AI request.</li>
         <li><strong>Profile and preferences.</strong> Information you provide during onboarding or in Settings (such as display name, age range, health goals, daily habits, and symptom selections) may be stored on your device to personalize greetings and your experience.</li>
-        <li><strong>Outputs and history.</strong> The App stores analysis outputs on your device so you can view results, trends, and history. This may include overall balance scores, status labels (for example, "Balanced" or "Damp"), six signal metrics (color, coating, moisture, shape, tip, and veins), body pattern summaries, wellness tips, food recommendations, timestamps, and optionally a blurred copy of your captured tongue photo associated with each reading.</li>
+        <li><strong>Outputs and history.</strong> The App stores results on your device so you can view trends and history. This may include a visual balance score, status labels, six feature cards, a TCM-inspired body-pattern summary, general wellness tips, food suggestions, timestamps, and a locally saved JPEG copy of your captured tongue photo.</li>
         <li><strong>Technical and usage data.</strong> We may process limited technical information needed to operate the App and secure our services, such as device type, operating system version, app version, language/locale, diagnostic logs, and error reports.</li>
         <li><strong>Subscriptions and purchases.</strong> If you purchase a subscription or other paid feature, Apple processes payment. We may receive subscription status, transaction identifiers, or similar information from Apple or our entitlement systems to unlock features.</li>
       </ul>
@@ -80,13 +80,15 @@
         This section describes photographs you choose to capture or import when you use the tongue scan feature. This is not Face ID, TrueDepth identity data, or biometric enrollment templates created by iOS for device authentication.
       </p>
       <p><strong>What we collect:</strong> A tongue photo per scan you initiate, encoded for transport as JPEG (typically resized on-device before upload).</p>
-      <p><strong>How we use it:</strong> Solely to generate in-app TCM-inspired wellness insights (scores, signal labels, body patterns, tips, and similar outputs), to show scan history and weekly balance trends on your device, and to operate, secure, and debug the analysis pipeline.</p>
+      <p><strong>How we collect it:</strong> Only after you start a scan, capture or select a photo, review the in-app disclosure, and choose <strong>Allow and Continue</strong>. The App does not upload photos in the background.</p>
+      <p><strong>How we use it:</strong> We use the photo only to provide the AI-generated visual observation you request and to display the resulting history on your device. We do not use it for advertising or identity recognition.</p>
       <p>
-        <strong>Third parties and storage:</strong> The image is sent over HTTPS to servers we operate, then forwarded to <strong>Google LLC's Gemini API</strong> for automated vision analysis. Google processes the image only to return the analysis output to our service; Google's processing is governed by Google's terms and privacy documentation applicable to API use. We do not sell tongue photos and do not share them with data brokers.
+        <strong>Third-party recipient:</strong> The image is sent over HTTPS to servers we operate, then forwarded to <strong>Google LLC's Gemini API</strong> for automated visual processing. Google's processing is governed by the Gemini API terms and applicable data-processing terms. We require service providers that receive personal data to provide the same or equivalent protection described in this policy and required by applicable law and Apple's guidelines. We do not sell tongue photos or share them with advertisers or data brokers.
       </p>
       <p>
-        <strong>Retention:</strong> On-device scan history, scores, and related data (including locally saved tongue photo files linked to readings) remain until you delete app data (<strong>Settings → Delete My Data</strong>), uninstall the App, or erase the device. On our servers, the uploaded image is removed from our primary processing flow once analysis completes. Residual server logs or backups may briefly retain fragments consistent with our infrastructure practices.
+        <strong>Retention:</strong> On-device history and locally saved tongue photos remain until you delete app data (<strong>Settings → Delete My Data</strong>), uninstall the App, or erase the device. Our processing endpoints do not intentionally retain uploaded images and return responses with no-store caching instructions; temporary operational data is removed through scheduled cleanup. Google may retain limited data for service operation, abuse prevention, security, or legal requirements under its applicable API terms.
       </p>
+      <p><strong>Consent and withdrawal:</strong> You can withdraw permission at any time by turning off <strong>Allow photo sharing</strong> in <strong>Settings → Share Data with AI</strong>. After withdrawal, the App blocks further AI photo uploads unless you grant permission again. Withdrawal does not remove local history; use <strong>Settings → Delete My Data</strong> for local deletion.</p>
     </section>
 
     <section>
@@ -102,8 +104,8 @@
     <section>
       <h2>How We Use Information</h2>
       <ul>
-        <li>Provide, maintain, and improve the App and its features (including generating analysis results you request).</li>
-        <li>Store your on-device history, balance trends, and profile settings as described in the App.</li>
+        <li>Generate the AI visual observation you explicitly request.</li>
+        <li>Store your scan history, trends, food picks, wellness tips, and profile settings on your device.</li>
         <li>Provide customer support and respond to inquiries.</li>
         <li>Protect the security and integrity of our services, detect fraud or abuse, and enforce our terms.</li>
         <li>Comply with law, regulatory obligations, and lawful requests.</li>
@@ -114,10 +116,10 @@
     <section>
       <h2>AI Analysis and Automated Outputs</h2>
       <p>
-        Certain features use automated systems, including machine learning models, to generate estimates, classifications, pattern names, and explanatory text based on your tongue photo. For cloud-based tongue scans, submitted images are analyzed using <strong>Google LLC's Gemini API</strong> (vision-capable model) via our backend; only outputs needed to display your results are returned to the App.
+        The photo observation feature uses <strong>Google LLC's Gemini API</strong> through our backend to describe visible features such as color, coating, surface appearance, and shape. The App does not send your profile or onboarding answers with the photo.
       </p>
       <p>
-        Outputs may be imperfect, incomplete, or incorrect. Automated results are not a substitute for professional medical advice, diagnosis, or treatment, and do not constitute a TCM clinical consultation.
+        Outputs may be imperfect, incomplete, or incorrect and can be affected by lighting, angle, food, drink, and time of day. They are not health measurements and are not a substitute for professional medical advice, diagnosis, or treatment.
       </p>
     </section>
 
@@ -132,7 +134,7 @@
       <h2>Sharing and Disclosure</h2>
       <p>We may share information with:</p>
       <ul>
-        <li>Service providers who assist us with hosting, networking, security, and AI inference—including Google LLC when we call the Gemini API.</li>
+        <li>Service providers who assist us with hosting, networking, security, and AI processing—including Google LLC when we call the Gemini API after you grant permission.</li>
         <li>Professional advisers (such as lawyers or auditors) where necessary.</li>
         <li>Authorities when required to comply with applicable law or to protect the rights, property, or safety of users or the public.</li>
         <li>Corporate transactions such as a merger, acquisition, or sale of assets, subject to appropriate safeguards.</li>
@@ -150,7 +152,7 @@
     <section>
       <h2>Retention</h2>
       <p>
-        On-device data persists until you delete it, uninstall the App, or erase the device. Server-side copies of tongue images are deleted after each completed scan job. Structured results, server logs, and backups may be retained for a period consistent with our infrastructure configuration, legal obligations, and security needs.
+        On-device data persists until you delete it, uninstall the App, or erase the device. Our processing endpoints do not intentionally retain uploaded images and use no-store caching instructions; temporary operational data is removed through scheduled cleanup. Google may retain limited data under its applicable Gemini API terms for service operation, abuse prevention, security, or legal requirements.
       </p>
     </section>
 
@@ -165,7 +167,8 @@
       <h2>Your Choices and Privacy Rights</h2>
       <p>Depending on your jurisdiction, you may have rights to access, correct, delete, or port personal information, and to object to or restrict certain processing. Controls available in the App and iOS include:</p>
       <ul>
-        <li><strong>On-device deletion:</strong> Settings → Delete My Data removes scan history, locally stored tongue photos, and profile fields stored by the App.</li>
+        <li><strong>Withdraw AI sharing consent:</strong> Turn off <strong>Allow photo sharing</strong> in <strong>Settings → Share Data with AI</strong>. No further photo is sent unless you grant permission again.</li>
+        <li><strong>On-device deletion:</strong> You can delete your local data at any time from <strong>Settings → Delete My Data</strong>. This removes scan history, locally stored tongue photos, profile fields, preferences, and usage data stored by the App.</li>
         <li><strong>Permissions:</strong> You can change camera, photo library, and notification permissions in iOS Settings.</li>
       </ul>
       <p>
